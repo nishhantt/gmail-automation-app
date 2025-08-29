@@ -1,0 +1,25 @@
+{
+    "rules": [
+        {
+            "pattern": "noreply@sliceit.com",
+            "match_type": "exact",
+            "action": "delete"
+        },
+        {
+            "pattern": "@newsletter.com",
+            "match_type": "domain",
+            "action": "archive"
+        },
+        {
+            "pattern": ".*@spammy\\.(?:info|xyz)$",
+            "match_type": "regex",
+            "action": "move_to_spam"
+        },
+        {
+            "pattern": "noreply@nykaa.com",
+            "match_type": "exact",
+            "action": "delete"
+        }
+    ],
+    "default_action": "keep"
+}
